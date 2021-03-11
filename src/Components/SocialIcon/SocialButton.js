@@ -1,9 +1,13 @@
 import React from 'react';
 
-const SocialButton = () => {
+const SocialButton = (props) => {
+	const { link, color, fontName } = props;
+
 	return (
-		<div>
-			<h2>This is a social button</h2>
+		<div className="social-button">
+			<a href={link} target="_blank" rel="noreferrer">
+				<i className={fontName}> </i>
+			</a>
 		</div>
 	);
 };

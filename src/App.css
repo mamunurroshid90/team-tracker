@@ -50,14 +50,20 @@
 }
 
 .Male{
-  background-color: blue;
+  background-color: blue !important;
 }
 .Female{
-  background-color: pink;
+  background-color: crimson !important;
 }
+
+.text p{
+  margin-bottom: 0;
+}
+
 .headersection{
   background: #333;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 /* .photo{
   width: 100px;
@@ -65,14 +71,31 @@
 
 } */
 
-
-.banner{
-  width: 500px;
-  height: 400px;
-  
+.text{
+  text-align: justify;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.p{
-  display: flex;
-  justify-content: end;
+
+.banner{
+  height: 250px;
+  width: auto;
+}
+
+.bg{
+  background-color: chocolate;
+}
+.card{
+  margin: 0;
+  padding: 0%;
+}
+
+.social-button a{
+  color: white;
+  font-size: 30px;
+}
+
+.buttons .social-button {
+  margin-left: 15px;
 }

@@ -8,11 +8,15 @@ const Header = (props) => {
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',
-		color: '#FFF',
-		background: banner ? 'url(' + banner + ')' : null,
-		backgroundRepeat: 'no-repeat',
+		color: 'white',
 		backgroundSize: 'cover'
 	};
+
+	if (banner) {
+		divStyle.background = 'url(' + banner + ')';
+		divStyle.backgroundRepeat = 'no-repeat';
+		divStyle.backgroundSize = 'cover';
+	}
 
 	return (
 		<div className="headersection" style={divStyle}>
